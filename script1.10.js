@@ -21,3 +21,4 @@ console.log(Boolean(undefined))
 console.log(Boolean(NaN))
 
 // Все остальные значения преобразуются в True
+
