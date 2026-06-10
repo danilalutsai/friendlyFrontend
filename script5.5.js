@@ -8,3 +8,4 @@ console.log(!'') // false
 console.log(!'Привет') // false
 console.log(!0) // false
 console.log(!111) // false
+
