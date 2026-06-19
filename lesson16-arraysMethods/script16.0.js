@@ -20,9 +20,10 @@ for (let i = 0; i < data.length; i++) {
 
 const letters = ['А', 'Б', 'В', 'Г', 'Д', 'Е']
 
-for (let i = 0; i < letters.length; i++) {
-    console.log(letters[i])
-    }
+// Итерация каждого элемента массива
+// for (let i = 0; i < letters.length; i++) {
+//     console.log(letters[i])
+//     }
 
 // forEach перебирает все элементы массива слева направо
 // Обычно используется только первая сущность element массива, то есть первый параметр в функции
@@ -31,6 +32,15 @@ letters.forEach((letter, i, array) => {
     console.log('Массив:', array)
 })
 
-letters.forEach(function printLetter(letter) {
+letters.forEach(function (letter) {
     console.log(letter)
 })
+
+const prices = [100, 200, 300, 400, 500, 600]
+console.log(prices.indexOf(300))
+
+// Если мы попытаемся получить индекс несуществующего обьекта мы получим index -1
+console.log(prices.indexOf(333)) // -1
+
+// Метод lastIndexOf производит поиск индекса элемента с конца массива 
+console.log(prices.lastIndexOf(500)) // 4
