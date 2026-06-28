@@ -29,6 +29,23 @@ const newUser = {
   },
 }
 
+class UserClass {
+    className = 'className'
+    constructor(name) {
+        this.name = name
+        console.log(this.className)
+    }
+}
+
+// Функция constructor вызывается автоматически когда пишем new 
+const newUserInstance = new UserClass('Данила')
+const newUserInstance2 = new UserClass('Никита')
+
+console.log(newUserInstance2.name)
+console.log(newUserInstance.name)
+newUserInstance.className = 'className1'
+console.log(newUserInstance.className)
+
 newUser.logInfo()
 console.log('Взрослый?', newUser.getIsAdult())
 

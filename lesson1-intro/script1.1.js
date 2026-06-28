@@ -6,8 +6,8 @@ const sign = Symbol()
 const something = undefined
 
 const user = {
-    login = '123',
-    password = 'qwerty',
+    login: '123',
+    password: 'qwerty',
 }
 
 const data = null
