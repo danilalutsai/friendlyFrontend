@@ -6,7 +6,7 @@ Promise.resolve()
 
 setTimeout(() => {
   console.log(2);
-}, 10)
+})
 
 queueMicrotask(() => {
   console.log(3);
