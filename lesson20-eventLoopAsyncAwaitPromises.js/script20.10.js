@@ -35,4 +35,4 @@ new Promise(resolve => {
   resolve(2);
 }).then(result => console.log(result));
 
-console.log(3);
+console.log(3); // The output is 1, 3, 2
