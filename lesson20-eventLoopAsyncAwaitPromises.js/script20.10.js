@@ -1,4 +1,4 @@
-new Promise((resolve, reject) => {
+const promise = new Promise((resolve, reject) => {
   // Some async stuff here
   // The current promise state is pending
   // The current promise result is undefined
@@ -15,7 +15,7 @@ new Promise((resolve, reject) => {
 })
 // We can create a Promise reaction method by chaining then or catch method to the Promise
 // Promise resolve value is passed to result in .then method
-.then((result) => {console.log(result)});
+promise.then((result) => {console.log(result)});
 
 new Promise((resolve, reject) => {
   setTimeout(() => { resolve('Done!') }, 2000);
