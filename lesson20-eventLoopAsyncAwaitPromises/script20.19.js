@@ -1,4 +1,4 @@
-async function fetchDataAPI(url) {
+function fetchDataAPI(url) {
   return fetch(url)
   .then(response => {
     if (!response.ok) {
