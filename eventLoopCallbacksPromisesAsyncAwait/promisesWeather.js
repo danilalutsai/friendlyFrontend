@@ -10,19 +10,30 @@ function getWeather() {
   return new Promise(function(resolve, reject) {
     // Async logic here
     setTimeout(() => {
-      if (5 + 5 === 11) {
+      if (5 + 5 === 10) {
       resolve("Sunny");
       }
-      reject("Error");
+      reject("Error.");
     }, 2000);
   });
 }
 
+function getWeatherIcon(weather) {
+  weather === "Sunny" ? console.log('☀️') : console.log('☁️');
+}
+
+function onSuccess(data) {
+  console.log(`Success! Data recieved: ${data}`);
+}
+
+function onError(error) {
+  console.error(`Error recieved: ${error}`);
+}
+
 // Promise receiver
-getWeather()
-.then(function(data) {
-  console.log(data);
-})
-.catch(function(error) {
-  console.log(error);
-})
+// Pending state
+let promise = getWeather()
+// Resolved or fulfilled state
+  .then(onSuccess)
+// Rejected state
+  .catch(onError);
