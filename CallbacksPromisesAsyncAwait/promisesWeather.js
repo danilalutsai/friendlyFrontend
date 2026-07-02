@@ -3,6 +3,7 @@
 // 2. Promise receiver - part of the code that calls the maker and recieves the code from it
 // and does something with it
 
+
 // Promise maker
 function getWeather() {
   // Promise takes as a parameter a function where you add async logic
@@ -10,16 +11,32 @@ function getWeather() {
   return new Promise(function(resolve, reject) {
     // Async logic here
     setTimeout(() => {
-      if (5 + 5 === 10) {
+      if(5 + 5 === 10) {
       resolve("Sunny");
       }
       reject("Error.");
-    }, 2000);
+    }, 100);
   });
 }
 
 function getWeatherIcon(weather) {
-  weather === "Sunny" ? console.log('☀️') : console.log('☁️');
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      switch(weather) {
+        case "Sunny": 
+          resolve("☀️");
+          break
+        case "Cloudy": 
+          resolve("☁️");
+          break
+        case "Rainy": 
+          resolve("🌧️");
+          break
+        default:
+          reject("No icon found.");
+      }
+    }, 100);
+  });
 }
 
 function onSuccess(data) {
@@ -34,6 +51,9 @@ function onError(error) {
 // Pending state
 let promise = getWeather()
 // Resolved or fulfilled state
+// Whatever is recieved in resolve case is passed as a 
+// parameter to function declared as a parameter to then
+  .then(getWeatherIcon)
   .then(onSuccess)
 // Rejected state
   .catch(onError);

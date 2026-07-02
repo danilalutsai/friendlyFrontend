@@ -19,3 +19,4 @@ async function getTemperature() {
 // Async function always return a promise Promise { <resolved> }
 // If the promise returns an error it becomes a rejected promise
 getTemperature();
+

@@ -26,7 +26,7 @@ fetch(apiUrl)
   isLoading = false;
 })
 
-myPromise
-.then() // Handle success
-.catch() // Hande error
-.finally() // Run once finished
+// myPromise
+// .then() // Handle success
+// .catch() // Hande error
+// .finally() // Run once finished
