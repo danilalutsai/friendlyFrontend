@@ -12,7 +12,7 @@ function getWeather() {
     // Async logic here
     setTimeout(() => {
       if(5 + 5 === 10) {
-      resolve("Sunny");
+      resolve("Cloudy");
       }
       reject("Error.");
     }, 100);

@@ -1,7 +1,7 @@
-function weatherRecieved(data) {
-  let weather = data;
-  console.log(weather);
-}
+  function weatherRecieved(data) {
+    let weather = data;
+    console.log(weather);
+  }
 
 function displayIcon(data) {
   if (data === "Sunny") console.log('☀️');
@@ -9,11 +9,14 @@ function displayIcon(data) {
 }
 
 function fetchWeather(callback) {
-  setTimeout(() => {
+  function timeoutCallback() {
     callback("Sunny");
-  }, 2000);
+  }
+  setTimeout(timeoutCallback, timeout);
 }
 
 fetchWeather(weatherRecieved);
 fetchWeather(displayIcon);
 
+
+const timeout = 2000;

@@ -1,9 +1,9 @@
 // Callback functions
 
-function orderPizza(callback) {
+function orderPizza(cb) {
   setTimeout(() => {
     const pizza = "🍕";
-    callback(pizza);
+    cb(pizza);
   }, 2000);
 }
 

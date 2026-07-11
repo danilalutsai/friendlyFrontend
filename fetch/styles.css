@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+  --page: #edf1f7;
+  --surface: #ffffff;
+  --surface-soft: #f8fafc;
+  --text: #172033;
+  --muted: #64748b;
+  --border: #d8e0ec;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --accent: #0f766e;
+  --ring: rgba(37, 99, 235, 0.22);
+  --shadow: 0 18px 42px rgba(15, 23, 42, 0.12);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), transparent 30rem),
+    radial-gradient(circle at bottom right, rgba(15, 118, 110, 0.12), transparent 28rem),
+    linear-gradient(135deg, #f8fafc 0%, var(--page) 100%);
+}
+
+main {
+  width: min(100% - 32px, 860px);
+  margin: 0 auto;
+  padding: 56px 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  max-width: 760px;
+  margin-bottom: 28px;
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.08;
+  letter-spacing: 0;
+  color: #0f172a;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.create-post-form,
+.load-post-form,
+.search-posts-form,
+.result {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow);
+}
+
+.create-post-form,
+.load-post-form,
+.search-posts-form {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+}
+
+.create-post-form,
+.load-post-form {
+  margin-bottom: 20px;
+}
+
+.create-post-form {
+  border-top: 4px solid var(--accent);
+}
+
+.load-post-form {
+  border-top: 4px solid var(--primary);
+}
+
+.search-posts-form {
+  border-top: 4px solid #7c3aed;
+}
+
+.create-post-form p,
+.load-post-form p,
+.search-posts-form p {
+  display: grid;
+  gap: 8px;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #334155;
+}
+
+input {
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface-soft);
+}
+
+input:focus {
+  border-color: var(--primary);
+  outline: 4px solid var(--ring);
+  background: var(--surface);
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 46px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--primary);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.22);
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+button:hover {
+  background: var(--primary-dark);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.28);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:focus-visible {
+  outline: 4px solid var(--ring);
+  outline-offset: 3px;
+}
+
+.result {
+  min-height: 96px;
+  margin-top: 20px;
+  padding: 24px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.result:empty::before {
+  content: "Результат запроса появится здесь.";
+}
+
+.result p {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+@media (min-width: 760px) {
+  .create-post-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .create-post-form h2,
+  .create-post-form button {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  main {
+    width: min(100% - 24px, 860px);
+    padding: 32px 0;
+  }
+
+  .create-post-form,
+  .load-post-form,
+  .search-posts-form,
+  .result {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
