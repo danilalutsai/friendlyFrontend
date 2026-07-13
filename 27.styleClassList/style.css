@@ -1,0 +1,8 @@
+.box {
+  overflow: auto;
+  width: 100px;
+  height: 100px;
+  padding: 30px;
+  background-color: lightseagreen;
+  border: 20px solid indianred;
+}

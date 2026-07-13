@@ -1,7 +1,7 @@
-  function weatherRecieved(data) {
-    let weather = data;
-    console.log(weather);
-  }
+function weatherRecieved(data) {
+  let weather = data;
+  console.log(weather);
+}
 
 function displayIcon(data) {
   if (data === "Sunny") console.log('☀️');

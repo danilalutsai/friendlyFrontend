@@ -1,0 +1,158 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "title": "Какой-то заголовок",
+      "id": "-a8CdEvbHMs",
+      "views": 0
+    },
+    {
+      "title": "Какой-то заголовок",
+      "id": "VJcntx_t1R0",
+      "views": 0
+    },
+    {
+      "title": "Какой-то там заголовок",
+      "id": "gpXJRqE9VJQ",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8"
+      }
+    },
+    {
+      "title": "Еще один какой-то пост",
+      "id": "3D7kzTx_Gho",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    },
+    {
+      "title": "Hello there",
+      "id": "qCRrim0nwAw",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    },
+    {
+      "title": "Hello there",
+      "id": "nmg0f8J38nA",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    },
+    {
+      "title": "Hello there",
+      "id": "hZ4brb9y68k",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    },
+    {
+      "title": "Hello there",
+      "id": "o2uv3Uy-2Dg",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    },
+    {
+      "title": "Hello there",
+      "id": "-2gVmmUt7Sc",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    },
+    {
+      "title": "Hello there",
+      "id": "kG540iVDEIo",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    },
+    {
+      "title": "Hello there",
+      "id": "gxUJ82QSxDA",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    },
+    {
+      "title": "Hello there",
+      "id": "jNV9u63v-Mg",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    },
+    {
+      "title": "",
+      "id": "xyjWl5MVCRs",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    },
+    {
+      "title": "Hello there",
+      "id": "h1BAMxYtPUM",
+      "views": 0,
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8",
+        "X-Auth-Token": "some-token"
+      },
+      "credentials": "include"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "$schema": "./node_modules/json-server/schema.json"
+}
