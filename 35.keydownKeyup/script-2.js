@@ -40,4 +40,3 @@ document.addEventListener("paste", (event) => {
   console.log("Событие PASTE:", event)
   console.log(event.clipboardData.getData("text/plain"))
 })
-
