@@ -18,11 +18,9 @@ inputElement.addEventListener("change", () => {
 document.addEventListener("cut", async function(event) {
   console.log("Событие CUT:", event)
 
-  /*
   navigator.clipboard.readText().then((clipboardText) => {
-    console.log("clipboardText:", clipboardText)
+    // console.log("clipboardText:", clipboardText)
   })
-  */
 
   try {
     const clipboardText = await navigator.clipboard.readText()
